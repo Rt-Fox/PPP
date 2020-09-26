@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>ППП</title>
+
+    <link rel="shortcut icon" type="image/png" href="src/logo.png"/>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+        .bg-black {
+            background-color: black;
+        }
+
+        .bg-image {
+            background-image: url(src/bg_0.png);
+            background-color: black;
+            background-size: 100vw auto;
+            background-position: 0 0;
+        }
+        .top-bg-img {
+            width: 100vw;
+        }
+
+        @font-face {
+            font-family: AlundraText; /* Гарнитура шрифта */
+            src: url(src/font.eot); /* Для IE5-8 */
+            src: local(AlundraText), url(src/font.ttf); /* Для остальных браузеров */
+        }
+
+        .font-declarator {
+            font-family: AlundraText, serif;
+            color: white;
+        }
+
+        .logo {
+            height: 5vw;
+            margin-right: 10px;
+        }
+
+        .screen-block {
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 7vh;
+        }
+
+        .big-text {
+            font-size: 5vh;
+        }
+
+        .nav-link:link {
+            color: white;
+        }
+
+        .nav-link:visited {
+            color: white;
+        }
+
+        .nav-link {
+            font-size: 3vh;
+        }
+
+        .menu-link:link {
+            color: white;
+        }
+
+        .menu-link:visited {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-image font-declarator">
+<nav id="navbar-example2" class="navbar fixed-top navbar-dark" style="background-color: black">
+    <a class="navbar-brand" href="#" style="font-size: 18pt">
+        <img src="src/logo_big.png" alt="" loading="lazy" class="logo">
+        <!--        Первому Перваку Приготовиться-->
+    </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#main">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#people">Участники</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#registration">Регистрация</a>
+        </li>
+    </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="container-fluid">
+        <!-- Главный экран -->
+        <div class="row screen-block align-items-center justify-content-center">
+            <div class="col-md-8">
+                <h1>Добро пажаловать в игру!</h1>
+                <ul class="big-text" style="margin-top: 5vh">
+                    <li>
+                        <a href="#about" class="menu-link"> О проекте </a>
+                    </li>
+                    <li>
+                        <a href="#how-to-play" class="menu-link"> Как играть </a>
+                    </li>
+                    <li>
+                        Важные даты
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--  Экран с текстом о том какой у нас классный квест  -->
+        <div class="row align-items-center justify-content-center bg-black" id="about">
+            <div class="col-md-10" style="padding-top: 20vh; padding-bottom: 10vh">
+                <div class="row">
+                    <div class="col-md-12" style="display: flex; justify-content: center;">
+                        <div >
+                            <img src="src/logo_big.png" style="height: 25vh">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            Текст про нас какие мы крутые и что такое проект. Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке модели развития. Не следует, однако забывать, что сложившаяся структура организации способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности требуют определения и уточнения направлений прогрессивного развития. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание дальнейших направлений развития.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Это по-идее должно быть на том же экрание что и описание но я не придумал как сделать адаптивно  -->
+        <div class="row bg-black justify-content-center">
+            <div class="col-md-10">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/carousel/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/carousel/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/carousel/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--    Экран с правилами игры    -->
+        <div class="row bg-black justify-content-center screen-block">
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>git add .
