@@ -34,10 +34,12 @@
 
 h1 {
     font-size: 7vh;
+    text-shadow: 4px 4px black;
 }
 
 .big-text {
     font-size: 5vh;
+    text-shadow: 4px 4px black;
 }
 
 .nav-link:link {
@@ -58,4 +60,54 @@ h1 {
 
 .menu-link:visited {
     color: white;
+}
+
+.invider {
+    height: 5vh;
+}
+
+.small-text {
+    font-size: 4vh;
+}
+
+.very-small-text {
+    font-size: 2vh;
+}
+
+.bottom-registration {
+    height: 50vh;
+    background-image: url(src/registration_bg.png);
+    background-size: 100vw auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.botton-registration {
+    border: 4px solid white;
+    box-shadow: 2px 2px black;
+    margin-top: 25vh;
+    padding: 10px;
+    font-size: 5vh;
+}
+
+.botton-registration:link {
+    color: white;
+}
+
+.botton-registration:visited {
+    color: white;
+}
+
+.botton-registration:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.centred {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.centred-text {
+    text-align: center;
 }
