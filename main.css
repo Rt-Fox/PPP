@@ -1,0 +1,61 @@
+.bg-black {
+    background-color: black;
+}
+
+.bg-image {
+    background-image: url(src/bg_0.png);
+    background-color: black;
+    background-size: 100vw auto;
+    background-position: 0 0;
+}
+.top-bg-img {
+    width: 100vw;
+}
+
+@font-face {
+    font-family: AlundraText; /* Гарнитура шрифта */
+    src: url(src/font.eot); /* Для IE5-8 */
+    src: local(AlundraText), url(src/font.ttf); /* Для остальных браузеров */
+}
+
+.font-declarator {
+    font-family: AlundraText, serif;
+    color: white;
+}
+
+.logo {
+    height: 5vw;
+    margin-right: 10px;
+}
+
+.screen-block {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+.big-text {
+    font-size: 5vh;
+}
+
+.nav-link:link {
+    color: white;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link {
+    font-size: 3vh;
+}
+
+.menu-link:link {
+    color: white;
+}
+
+.menu-link:visited {
+    color: white;
+}
