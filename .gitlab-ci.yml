@@ -4,7 +4,5 @@ stages:
 Get updates:
   stage: deploy
   script:
-    - cd /var/www/html
-    - git config --global user.name "Evgeny Kuryatov"
-    - git config --global user.email "gerakl00@gmail.com"
-    - git pull
+    - rm -r /var/www/html/*
+    - cp ./* /var/www/html/
