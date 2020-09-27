@@ -1,4 +1,4 @@
-stges:
+stages:
   - deploy
 
 Get updates:
