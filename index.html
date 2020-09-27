@@ -21,22 +21,27 @@
 
 </head>
 <body class="bg-image font-declarator">
-<nav id="navbar-example2" class="navbar fixed-top navbar-dark" style="background-color: black">
+<nav id="navbar-example2" class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: black">
     <a class="navbar-brand" href="#" style="font-size: 18pt">
         <img src="src/logo_new.png" alt="" loading="lazy" class="logo">
         <!--        Первому Перваку Приготовиться-->
     </a>
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link" href="#main">Главная</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#people">Участники</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#registration">Регистрация</a>
-        </li>
-    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0; border-color: white; color: white; border-width: 3px; outline: None;">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#main">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#people">Участники</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#registration">Регистрация</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <div class="container-fluid">
@@ -168,7 +173,7 @@
                 </div>
                 <div class="row bottom-registration justify-content-center" style="height: auto">
                     <div class="col-md-4">
-                        <a class="botton-registration" href="#">Регистрация</a>
+                        <a class="botton-registration centred-text" href="#">Регистрация</a>
                     </div>
                 </div>
             </div>

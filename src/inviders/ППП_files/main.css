@@ -24,7 +24,7 @@
 }
 
 .logo {
-    height: 5vh;
+    height: 5vw;
     margin-right: 10px;
 }
 
@@ -43,14 +43,10 @@ h1 {
 }
 
 .nav-link:link {
-    color: gray;
+    color: white;
 }
 
 .nav-link:visited {
-    color: gray;
-}
-
-.nav-link:hover {
     color: white;
 }
 
@@ -68,7 +64,6 @@ h1 {
 
 .invider {
     height: 5vh;
-    margin-bottom: 2vh;
 }
 
 .small-text {
@@ -91,7 +86,7 @@ h1 {
     border: 4px solid white;
     box-shadow: 2px 2px black;
     margin-top: 25vh;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
     font-size: 5vh;
 }
 
