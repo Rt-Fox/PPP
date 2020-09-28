@@ -1,28 +1,52 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    width: 100vw;!important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 .bg-black {
     background-color: black;
+    width: 100%;
 }
-
+main {
+    width: 100vw;
+    min-height: 100vh;
+}
 .bg-image {
     background-image: url(src/bg_0.png);
     background-color: black;
-    background-size: 100vw auto;
     background-position: 0 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image-reg {
+    background-image: url(src/reg.png);
+    background-color: black;
+    background-position: 0 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image-reg >div {
+    min-height: 91.5vh;
 }
 .top-bg-img {
     width: 100vw;
 }
 
 @font-face {
-    font-family: AlundraText; /* Гарнитура шрифта */
-    src: url(src/font.eot); /* Для IE5-8 */
-    src: local(AlundraText), url(src/font.ttf); /* Для остальных браузеров */
+    font-family:progresspixel-bold; /* Гарнитура шрифта */
+    src:  url(src/progresspixel.ttf); /* Для остальных браузеров */
 }
 
 .font-declarator {
-    font-family: AlundraText, serif;
+    font-family: progresspixel-bold, serif;
     color: white;
 }
-
 .logo {
     height: 5vh;
     margin-right: 10px;
@@ -33,15 +57,33 @@
 }
 
 h1 {
-    font-size: 7vh;
+    font-size: 6vh;
     text-shadow: 4px 4px black;
 }
-
+.h1_color {
+    background: linear-gradient(to bottom, #FF7A00, #FFF8B6); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+    text-shadow: none;
+    color: white;
+}
+.h1_color::before {
+    text-shadow: 4px 4px black;
+}
 .big-text {
-    font-size: 5vh;
+    font-size: 4vh;
     text-shadow: 4px 4px black;
+    list-style-type: square;
 }
-
+li {
+    color: #A1D2FF;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .nav-link:link {
     color: gray;
 }
@@ -82,11 +124,18 @@ h1 {
 .bottom-registration {
     height: 50vh;
     background-image: url(src/registration_bg.png);
-    background-size: 100vw auto;
+    background-size: cover;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
-
+.howtoplay {
+    height: 100%;
+    background-image: url(src/howtoplay.svg);
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-repeat: no-repeat;
+}
 .botton-registration {
     border: 4px solid white;
     box-shadow: 2px 2px black;
@@ -106,13 +155,78 @@ h1 {
 .botton-registration:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+.form-control {
+    width: 75%;
+    height: 3em;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0;
+}
+.centr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .centred {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-
+.box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    padding: 2vh 5vw;
+    margin: 5vh 0;
+}
 .centred-text {
     text-align: center;
+}
+main div {
+    height: auto;
+}
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new span, .new span:hover{
+    padding-left: 10px;
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+.plus svg{
+    height: 20px;
+    width: 20px;
+}
+footer, footer a, footer a:hover{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10vh;
+    background: black;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+footer a:hover {
+    padding-top: 5px;
+}
+footer svg {
+    height: 30px;
+    width: 30px;
+    margin: 0 40px 0 20px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .h1_color {
+        background: none;
+        text-shadow: 4px 4px black;
+        color: white;
+    }
 }
