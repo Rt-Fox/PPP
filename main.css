@@ -65,7 +65,10 @@ h1 {
     -webkit-background-clip: text; /* Обрезаем фон по тексту */
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
     text-shadow: none;
-    filter: drop-shadow(4px 4px black);
+    color: white;
+}
+.h1_color::before {
+    text-shadow: 4px 4px black;
 }
 .big-text {
     font-size: 4vh;
