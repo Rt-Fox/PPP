@@ -174,7 +174,7 @@ li {
 .form-control {
     width: 75%;
     height: 3em;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(207, 207, 207, 1);
     border-radius: 0;
     cursor: pointer;
 }
@@ -246,6 +246,14 @@ footer svg {
     height: 30px;
     width: 30px;
     margin: 0 40px 0 20px;
+}
+.inactive {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.inactive:focus,.inactive:hover,.inactive:active {
+    outline: none;
+    box-shadow: none;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
