@@ -178,6 +178,9 @@ li {
     border-radius: 0;
     cursor: pointer;
 }
+.btn-dark {
+    border-radius: 0;
+}
 .centr {
     display: flex;
     align-items: center;
