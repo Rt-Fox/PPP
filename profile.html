@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <title>ППП</title>
+
+    <link rel="shortcut icon" type="image/png" href="src/logo_new.png"/>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        var x = 4;
+
+        function addInput() {
+            if (x < 5) {
+                var str = '<div class="form-group d-flex justify-content-center"><input type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
+                document.getElementById('input' + x).innerHTML = str;
+                x++;
+            } else {
+                if (x < 7) {
+                    var str = '<div class="form-group d-flex justify-content-center"><input type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
+                    document.getElementById('input' + x).innerHTML = str;
+                    document.getElementById('buttonplus').classList.add('inactive');
+                } else {
+
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-declarator">
+<nav id="navbar-example2" class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: black">
+    <a class="navbar-brand" href="#" style="font-size: 18pt">
+        <img src="src/logo_new.png" alt="" loading="lazy" class="logo">
+        <!--        Первому Перваку Приготовиться-->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0; border-color: white; color: white; border-width: 3px; outline: None;">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="nav ml-auto mt-2 mt-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="commands.html">Участники</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration.html">Регестрация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="bg-image-prf" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="blue_box">
+        <div class="yellow_box">
+            <div class="head_box"></div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
