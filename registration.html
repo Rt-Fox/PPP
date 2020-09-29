@@ -18,7 +18,20 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        var x = 4;
 
+        function addInput() {
+            if (x < 10) {
+                var str = '<div class="form-group d-flex justify-content-center"><input type="text" id="input' + (x + 1) + '" class="form-control" placeholder="ФИ участника команды"></div> <div id="input' + (x + 1) + '"></div>';
+                document.getElementById('input' + x).innerHTML = str;
+                x++;
+            } else
+            {
+                alert('STOP it!');
+            }
+        }
+    </script>
 </head>
 <body class="font-declarator">
 <nav id="navbar-example2" class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: black">
@@ -32,13 +45,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="nav ml-auto mt-2 mt-md-0">
             <li class="nav-item">
-                <a class="nav-link" href="#main">Главная</a>
+                <a class="nav-link" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#people">Участники</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#registration">Регистрация</a>
+                <a class="nav-link" href="#">Регистрация</a>
             </li>
         </ul>
     </div>
@@ -86,20 +99,21 @@
                         <input type="text" class="form-control" id="#" placeholder="vk.com/капитана команды">
                     </div>
                     <div class="form-group d-flex justify-content-center">
-                        <input type="text" class="form-control" id="#" placeholder="ФИ участника команды">
+                        <input type="text" class="form-control" id="input1" placeholder="ФИ участника команды">
                     </div>
                     <div class="form-group d-flex justify-content-center">
-                        <input type="text" class="form-control" id="#" placeholder="ФИ участника команды">
+                        <input type="text" class="form-control" id="input2" placeholder="ФИ участника команды">
                     </div>
                     <div class="form-group d-flex justify-content-center">
-                        <input type="text" class="form-control" id="#" placeholder="ФИ участника команды">
+                        <input type="text" class="form-control" id="input3" placeholder="ФИ участника команды">
                     </div>
-                    <button type="submit" class="new mx-auto btn form-group d-flex justify-content-center">
+                    <div id="input4"></div>
+                    <button type="submit" class="new mx-auto btn form-group d-flex justify-content-center" onclick="addInput()">
                         <div class="plus">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="11" width="6" height="28" fill="white"/>
-                            <rect y="17" width="6" height="28" transform="rotate(-90 0 17)" fill="white"/>
-                        </svg>
+                                <rect x="11" width="6" height="28" fill="white"/>
+                                <rect y="17" width="6" height="28" transform="rotate(-90 0 17)" fill="white"/>
+                            </svg>
                         </div>
                         <span>Добавить участника</span>
                     </button>

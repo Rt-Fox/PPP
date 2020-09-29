@@ -267,4 +267,8 @@ footer svg {
     .very-small-text {
         font-size: 2.5vh;
     }
+    .form-control{
+        width: 90%;
+        font-size: 0.9rem;
+    }
 }
