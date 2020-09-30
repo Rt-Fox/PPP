@@ -272,6 +272,109 @@ footer svg {
     outline: none;
     box-shadow: none;
 }
+
+/*карточка профиля и комманд*/
+.main_block {
+    padding-left: 12vw;
+    width: 100%;
+    height: 85vh;
+    flex-shrink: 0;
+
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    overflow-x: scroll;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.blue_wrap {
+    width: 400px;
+    height: 85%;
+    background-color: #536CA4;
+    box-shadow: 3px 3px 0 3px #405688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    flex-shrink: 0;
+
+}
+.element {
+    width: 95%;
+    height: 98%;
+    background-color: #CCBEA7;
+    box-shadow:inset -2px -2px 0 2px #A39682;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+.head_element {
+    width: 98%;
+    height: 5%;
+    background-color: #858483;
+    margin:5% 0;
+    box-shadow:2px 0 #6D6E6E;
+    color: #CCBEA7;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head_element h5{
+    text-align: center;
+    margin: 0;
+}
+.el {
+    width: 90%;
+    height: auto;
+    max-height: 100%;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+.el p {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #455774;
+}
+.el p:first-child {
+    display: flex;
+    align-items: center;
+    margin:0 5px 0 10px;
+    color: #686868;
+}
+.profile_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+}
+.profile_box .element {
+    width: 98%;
+    height: 97%;
+}
+.profile_box .head_element {
+    height: auto;
+    width: 99.5%;
+    box-shadow:5px 0 #6D6E6E;
+}
+.profile_box .head_element h3 {
+    text-align: center;
+}
+.profile_box .el {
+    margin-left: 10%;
+}
+.profile_box p {
+    font-size: 30px;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .h1_color {
@@ -295,5 +398,36 @@ footer svg {
     .form-control{
         width: 90%;
         font-size: 0.9rem;
+    }
+    .head_element {
+        height: auto;
+    }
+    .main_block {
+        padding-top: 20px;
+        width: 100%;
+        height: 90vh;
+        padding-left: 10%;
+    }
+    .blue_wrap {
+        width: 90%;
+        height: 90%;
+    }
+    .profile_box {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 90vw;
+        height: 70vh;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .profile_box .head_element {
+        margin-top: 10%;
+    }
+    .profile_box h3 {
+        text-align: center;
+        font-size: 22px;
+    }
+    .profile_box p {
+        font-size: 22px;
     }
 }
