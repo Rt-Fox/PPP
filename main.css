@@ -77,6 +77,10 @@ h1 {
     text-shadow: 4px 4px black;
 }
 .h1_color {
+    animation-name: run;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     background: linear-gradient(to bottom, #FF7A00, #FFF8B6); /* Градиент для текста */
     -webkit-background-clip: text; /* Обрезаем фон по тексту */
     -webkit-text-fill-color: transparent; /* Прозрачный текст */
@@ -439,4 +443,12 @@ footer svg {
     .profile_box p {
         font-size: 22px;
     }
+}
+
+@keyframes run {
+    0% { transform: translateY(10px) translateX(3px); }
+    25% {transform: translateX(-3px)}
+    50% { transform: translateY(-10px) translateX(3px); }
+    75% {transform: translateX(-3px)}
+    100% { transform: translateY(10px) translateX(3px); }
 }
