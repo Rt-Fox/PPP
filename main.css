@@ -87,6 +87,7 @@ h1 {
     text-shadow: none;
     filter: drop-shadow(4px 4px black);
     color: white;
+    padding-bottom: 10px;
 }
 .big-text {
     font-size: 4vh;
@@ -446,9 +447,7 @@ footer svg {
 }
 
 @keyframes run {
-    0% { transform: translateY(10px) translateX(3px); }
-    25% {transform: translateX(-3px)}
-    50% { transform: translateY(-10px) translateX(3px); }
-    75% {transform: translateX(-3px)}
-    100% { transform: translateY(10px) translateX(3px); }
+    0% { transform: translateY(10px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(10px); }
 }
