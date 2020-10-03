@@ -38,6 +38,7 @@ main {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .bg-image-com {
     background-image: url(src/commands.svg);
@@ -46,6 +47,7 @@ main {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .bg-image-reg >div {
     min-height: 91.5vh;
@@ -421,6 +423,7 @@ footer svg {
         width: 100%;
         height: 90vh;
         padding-left: 10%;
+        bottom: -1vh;
     }
     .blue_wrap {
         width: 90%;
