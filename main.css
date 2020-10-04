@@ -299,17 +299,24 @@ footer svg {
     display: none;
 }
 .radio div{
-    padding: 1px;
-    margin: 2px;
+    padding: 5px;
+    margin: 0px;
     color: #455774;
 }
 .radio > input[type=radio]:checked + div {
     color: #CCBEA7;
-    padding: 1px;
-    margin: 2px;
+    padding: 5px;
+    margin: 0px;
     width: 100%;
     height: auto;
     background-color: #455774;
+}
+.radio > input[type=radio]:not(:checked) + div {
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
 }
 /*карточка профиля и комманд*/
 .main_block {
