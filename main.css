@@ -323,6 +323,11 @@ footer svg {
     height: auto;
     background-color: #455774;
 }
+input[type=radio]:checked + div >.span_color {
+    background: linear-gradient(to bottom, #FF7A00, #FFF8B6); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}
 .radio > input[type=radio]:not(:checked) + div {
     padding: 10px;
     margin: 0px;
@@ -445,6 +450,10 @@ footer svg {
         background: none;
         text-shadow: 4px 4px black;
         color: white;
+    }
+    input[type=radio]:checked + div >.span_color {
+        background: none;
+        color: #FFF8B6;
     }
 }
 @media screen and (max-width: 600px) {
