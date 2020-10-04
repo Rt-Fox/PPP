@@ -30,6 +30,7 @@ main {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .bg-image-prf {
     background-image: url(src/profile.svg);
@@ -279,7 +280,37 @@ footer svg {
     outline: none;
     box-shadow: none;
 }
-
+.radio ~ span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+}
+.radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    border: 3px solid #536CA4;
+    background-color: #CCBEA7;
+    width: auto;
+}
+.radio input{
+    display: none;
+}
+.radio div{
+    padding: 1px;
+    margin: 2px;
+    color: #455774;
+}
+.radio > input[type=radio]:checked + div {
+    color: #CCBEA7;
+    padding: 1px;
+    margin: 2px;
+    width: 100%;
+    height: auto;
+    background-color: #455774;
+}
 /*карточка профиля и комманд*/
 .main_block {
     padding-left: 12vw;

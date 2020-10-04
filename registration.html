@@ -23,12 +23,12 @@
 
         function addInput() {
             if (x < 5) {
-                var str = '<div class="form-group d-flex justify-content-center"><input type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
+                var str = '<div class="form-group d-flex justify-content-center"><input required type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
                 document.getElementById('input' + x).innerHTML = str;
                 x++;
             } else {
                 if (x < 7) {
-                var str = '<div class="form-group d-flex justify-content-center"><input type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
+                var str = '<div class="form-group d-flex justify-content-center"><input required type="text" id="input' + (x) + '" class="form-control" placeholder="ФИ участника"></div> <div id="input' + (x + 1) + '"></div>';
                 document.getElementById('input' + x).innerHTML = str;
                 document.getElementById('buttonplus').classList.add('inactive');
                 } else {
@@ -106,6 +106,17 @@
                         </div>
                         <span>Добавить участника</span>
                     </button>
+                    <div class="form-group d-flex justify-content-center">
+                        <label class="radio">
+                            <input name="data" type="radio" checked value="11" />
+                            <div>11</div>
+                        </label>
+                        <span>Выберите дату</span>
+                        <label class="radio">
+                            <input name="data" type="radio" value="18" />
+                            <div>18</div>
+                        </label>
+                    </div>
                     <button type="submit" class="btn btn-dark m-auto pr-5 pl-5 d-flex justify-content-center">Готово</button>
                 </form>
             </div>
