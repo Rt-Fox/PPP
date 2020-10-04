@@ -280,43 +280,54 @@ footer svg {
     outline: none;
     box-shadow: none;
 }
-.radio ~ span {
+.data_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 2vw;
+    margin-right: 2vw;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px black;
 }
 .radio {
+    margin: 0;
+    margin-right: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
-    border: 3px solid #536CA4;
-    background-color: #CCBEA7;
-    width: auto;
+    width: 56px;
+    height: 56px;
 }
 .radio input{
     display: none;
 }
 .radio div{
-    padding: 5px;
-    margin: 0px;
-    color: #455774;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color: #686868;
+    background: #C4C4C4;
+    border: 3px solid #686868;
 }
 .radio > input[type=radio]:checked + div {
-    color: #CCBEA7;
-    padding: 5px;
+    color: #FFF8B6;
+    border: 3px solid #293C5A;
+    padding: 10px;
     margin: 0px;
     width: 100%;
     height: auto;
     background-color: #455774;
 }
 .radio > input[type=radio]:not(:checked) + div {
-    padding: 5px;
+    padding: 10px;
     margin: 0px;
     width: 100%;
     height: auto;
-    opacity: 0.5;
 }
 /*карточка профиля и комманд*/
 .main_block {
@@ -484,6 +495,22 @@ footer svg {
     }
     .profile_box p {
         font-size: 22px;
+    }
+    .data_text {
+        font-size: 15px;
+    }
+    .radio {
+        width: auto;
+        height: auto;
+    }
+    .radio div{
+        font-size: 15px;
+    }
+    .radio > input[type=radio]:checked + div{
+        padding: 7px;
+    }
+    .radio > input[type=radio]:not(:checked) + div{
+        padding: 7px;
     }
 }
 
